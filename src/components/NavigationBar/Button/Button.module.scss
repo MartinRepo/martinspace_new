@@ -1,0 +1,26 @@
+.list{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 2.2em;
+    transition: background-color 0.3s;
+    margin-right: 1em;
+    border-radius: 5px;
+    position: relative;
+}
+
+.link{
+    text-decoration: none;
+    color: whitesmoke;
+    text-shadow: 0 0 0 rgba(0, 0, 0, 0);
+    transition: text-shadow 0.3s;
+}
+
+.list:hover{
+    background-color: rgb(246, 165, 2);
+}
+
+.list:hover .link{
+    color: black;
+    text-shadow: 0 0 1px rgba(0, 0, 0, 1);
+}

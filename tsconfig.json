@@ -1,0 +1,17 @@
+{
+    "compilerOptions": {
+      "target": "esnext",
+      "module": "esnext",
+      "moduleResolution": "node",
+      "lib": ["dom", "dom.iterable", "esnext"],
+      "jsx": "react",
+      "strict": true,
+      "esModuleInterop": true,
+      "skipLibCheck": true,
+      "forceConsistentCasingInFileNames": true,
+      "typeRoots": ["./node_modules/@types", "./typings"],
+      "baseUrl": ".",
+      "types": ["webpack-env"],
+    },
+    "include": ["src/**/*", "typings/**/*.d.ts"]
+  }
