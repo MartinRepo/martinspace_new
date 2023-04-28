@@ -4,13 +4,28 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    background: linear-gradient(130deg, black, rgb(50,50,50), grey);
-    color: white;
+    background: linear-gradient(100deg, whitesmoke, grey);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);;
 }
+
+.theme-light {
+    background: linear-gradient(100deg, whitesmoke, grey);
+  }
+  .theme-light .title a {
+    color: black;
+  }
+
+  .theme-dark {
+    background: linear-gradient(100deg, #333, #444);
+    color: white;
+  }
+  .theme-dark .title a {
+    color: white;
+  }
+  
 
 .title a{
     text-decoration: none;
-    color: whitesmoke;
     transition: color 0.3s;
 }
 
