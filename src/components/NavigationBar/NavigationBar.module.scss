@@ -9,14 +9,14 @@
 }
 
 .theme-light {
-    background: linear-gradient(100deg, whitesmoke, grey);
+    background: linear-gradient(100deg, rgb(223, 222, 222), grey);
   }
   .theme-light .title a {
     color: black;
   }
 
   .theme-dark {
-    background: linear-gradient(100deg, #333, #444);
+    background: linear-gradient(100deg, black, grey);
     color: white;
   }
   .theme-dark .title a {
@@ -29,6 +29,13 @@
     transition: color 0.3s;
 }
 
-.title a:hover{
+.theme-light .title a:hover{
+  // color: rgb(0, 132, 255); 
+  // color: linear-gradient(100deg, rgb(0, 204, 255), rgb(246, 165, 2));
+  background-image: var(--main-gradient);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+.theme-dark .title a:hover{
     color:rgb(246, 165, 2)
 }

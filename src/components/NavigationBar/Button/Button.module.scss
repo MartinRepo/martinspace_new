@@ -7,6 +7,7 @@
     margin-right: 1em;
     border-radius: 5px;
     position: relative;
+    font-weight: bolder;
   }
   
 .theme-light .link {
@@ -21,17 +22,22 @@
     transition: color 0.3s;
   }
   
-.list:hover {
-    background-color: rgb(246, 165, 2);
+ .theme-light:hover{
+  // background-color: rgb(0, 204, 255);
+  background-color: grey;
+  color: transparent;
+}
+.theme-dark:hover{
+  background-color: rgb(246, 165, 2);
 }
 
 .list:hover .theme1-light {
     color: white;
-    text-shadow: 0 0 1px white;
+    // text-shadow: 0 0 1px white;
   }
   
  .list:hover .theme1-dark {
     color: black;
-    text-shadow: 0 0 1px rgba(0, 0, 0, 1);
+    // text-shadow: 0 0 1px rgba(0, 0, 0, 1);
   }
   
