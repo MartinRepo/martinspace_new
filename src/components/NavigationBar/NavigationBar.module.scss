@@ -30,8 +30,6 @@
 }
 
 .theme-light .title a:hover{
-  // color: rgb(0, 132, 255); 
-  // color: linear-gradient(100deg, rgb(0, 204, 255), rgb(246, 165, 2));
   background-image: var(--main-gradient);
   -webkit-background-clip: text;
   color: transparent;
