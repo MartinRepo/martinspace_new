@@ -29,7 +29,7 @@ export default function PersonInfoCard(){
                 </a>
                 <a href="mailto:martinchi7788@gmail.com" className={`${style.mail} ${style[`mail-theme-${theme}`]}`} target="_blank">
                 <MailOutlineIcon fontSize="large"/>
-                </a>
+                </a> 
             </div>
             </div>
         </div>

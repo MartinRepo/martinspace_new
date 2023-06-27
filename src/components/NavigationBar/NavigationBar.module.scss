@@ -5,7 +5,9 @@
     flex-direction: row;
     justify-content: space-between;
     background: linear-gradient(100deg, whitesmoke, grey);
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);;
+    box-shadow: 0 2px 4px #0000001a;
+    position: fixed;
+    z-index: 1000;
 }
 
 .theme-light {
@@ -23,6 +25,24 @@
     color: white;
   }
   
+  /* 当视窗宽度小于 600px */
+  @media only screen and (max-width: 600px) {
+    .title {
+      font-size: 12px;  /* 较小的视窗中的字体大小 */
+    }
+  }
+  
+  @media only screen and (min-width: 601px) and (max-width: 1200px) {
+    .title {
+      font-size: 18px;  /* 中等的视窗中的字体大小 */
+    }
+  }
+  
+  @media only screen and (min-width: 1201px) {
+    .title {
+      font-size: 20px;  /* 较大的视窗中的字体大小 */
+    }
+  }
 
 .title a{
     text-decoration: none;

@@ -4,7 +4,7 @@
     justify-content: center;
     height: 2.2em;
     transition: background-color 0.3s;
-    margin-right: 1em;
+    // margin-right: 1em;
     border-radius: 5px;
     position: relative;
     font-weight: bolder;
@@ -38,3 +38,23 @@
     color: black;
   }
   
+  /* 当视窗宽度小于 600px */
+  @media only screen and (max-width: 600px) {
+    .link {
+      font-size: 12px;  /* 较小的视窗中的字体大小 */
+    }
+  }
+  
+  /* 当视窗宽度大于 600px，但小于 1200px */
+  @media only screen and (min-width: 601px) and (max-width: 1200px) {
+    .link {
+      font-size: 18px;  /* 中等的视窗中的字体大小 */
+    }
+  }
+  
+  /* 当视窗宽度大于 1200px */
+  @media only screen and (min-width: 1201px) {
+    .link {
+      font-size: 18px;  /* 较大的视窗中的字体大小 */
+    }
+  }

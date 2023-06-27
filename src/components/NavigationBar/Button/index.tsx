@@ -12,8 +12,8 @@ interface ButtonProps {
 export default function Button({name, url}: ButtonProps){
     const { theme } = useContext(ThemeContext) as ThemeContextValue;
     return (
-        <li className={`${style.list} ${style[`theme-${theme}`]}`}>
+        <div className={`${style.list} ${style[`theme-${theme}`]}`}>
             <a className={`${style.link} ${style[`theme1-${theme}`]}`} href={url}>{name}</a>
-        </li>
+        </div>
     );
 }
