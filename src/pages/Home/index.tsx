@@ -8,6 +8,7 @@ import PinnedCard from "../../components/PinnedCard";
 import { PostList } from "../../components/PostList";
 import { Grid } from "@mui/material";
 import { Container, Box } from "@mui/material";
+import BackToTopButton from "../../components/BackToTopButton";
 
 export default function Home(){
     return(
@@ -35,11 +36,11 @@ export default function Home(){
                         <p className={style.newest}>Newest</p>
                         </Grid>
                     </Grid>
-                    <Grid container spacing={3} justifyContent="center">
-                        <Grid item xs={12} sm={6} md={4} lg={4}>
+                    <Grid container spacing={3} style={{display: "flex", flexDirection: "row", justifyContent: "center"}}>
+                        <Grid item xs={12} sm={8} md={4} lg={4}>
                         <PinnedCard /> 
                         </Grid>
-                        <Grid item xs={12} sm={6} md={4} lg={4}>  
+                        <Grid item xs={12} sm={8} md={4} lg={4}>  
                         <PinnedCard />
                         </Grid>
                         <Grid item xs={12} sm={12} md={4} lg={2}>
@@ -53,9 +54,14 @@ export default function Home(){
                         <p className={style.newest}>Post List</p>
                     </Grid>
                 </Grid>
-                <Grid container justifyContent="center" style={{marginTop: "1em", marginBottom: "0.5em"}}>
-                    <Grid item>
+                <Grid container style={{display: "flex", justifyContent: "center", marginTop: "1em", marginBottom: "0.5em"}}>
+                    <Grid item xs={10} sm={10}>
                         <PostList />
+                    </Grid>
+                </Grid>
+                <Grid container style={{display: "flex", justifyContent: "center", marginTop: "1em", marginBottom: "0.5em"}}>
+                    <Grid item xs={10} sm={10}>
+                        <BackToTopButton/>
                     </Grid>
                 </Grid>
                 </Grid>

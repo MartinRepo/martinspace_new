@@ -1,14 +1,25 @@
 .container-theme-light{
     width: 100%;
     max-width: 650px;
-    height: 300px;
-    border: 1px solid black;
+    height: 18.75em;
     border-radius: 10px;
+    background-color: white;
+    box-shadow: 0 1em 2em rgba(0,0,0,.3);
 }
 .container-theme-dark{
     width: 100%;
     max-width: 650px;
-    height: 300px;
-    border: 1px solid white;
+    max-height: 18.75em;
+    background-color: whitesmoke;
+    color: black;
     border-radius: 10px;
+}
+.container-theme-light > cardHeader{
+    height: auto;
+}
+.container-theme-light > cardBody{
+    height: auto;
+}
+.container-theme-light > cardFooter{
+    height: auto;
 }

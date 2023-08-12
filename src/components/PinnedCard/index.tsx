@@ -7,8 +7,14 @@ export default function PinnedCard(){
     return(
         <div className={`${style.container} ${style[`container-theme-${theme}`]}`}>
             <img/>
-            <div>
-                这里是summary
+            <div className={`${style.cardHeader}`}>
+            卡片标题
+            </div>
+            <div className={`${style.cardBody}`}>
+            卡片正文
+            </div>
+            <div className={`${style.cardFooter}`}>
+                <a href="#" style={{textDecoration:"none"}}>#标签</a>
             </div>
         </div>
     );

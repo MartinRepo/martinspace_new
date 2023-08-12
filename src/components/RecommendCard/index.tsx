@@ -11,7 +11,7 @@ export default function RecommendCard({title}: RecommendCardProps){
     const { theme } = useContext(ThemeContext) as ThemeContextValue;
 
     return (
-        <div className={style.card}>
+        <div className={style.card}> 
       <div className={`${style[`cardContainer-theme-${theme}`]}`}>
         <p className={style.name}>{title}</p>
         <div className={`${style.item} ${style[`item-theme-${theme}`]}`} onMouseEnter={() => setIsHover(true)} onMouseLeave={() => setIsHover(false)}> 
